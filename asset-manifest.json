@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NoCodeEDA/static/css/main.f5bd13d5.css",
+    "main.js": "/NoCodeEDA/static/js/main.8789c03b.js",
+    "static/js/488.5dc00adb.chunk.js": "/NoCodeEDA/static/js/488.5dc00adb.chunk.js",
+    "index.html": "/NoCodeEDA/index.html",
+    "main.f5bd13d5.css.map": "/NoCodeEDA/static/css/main.f5bd13d5.css.map",
+    "main.8789c03b.js.map": "/NoCodeEDA/static/js/main.8789c03b.js.map",
+    "488.5dc00adb.chunk.js.map": "/NoCodeEDA/static/js/488.5dc00adb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5bd13d5.css",
+    "static/js/main.8789c03b.js"
+  ]
+}
