@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: your-app-name
+    name: nocodeeda
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    startCommand: gunicorn server:app

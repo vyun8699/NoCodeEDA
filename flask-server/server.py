@@ -22,6 +22,11 @@ CORS(app,
 # Initialize data processor
 processor = DataProcessor()
 
+@app.route("/", methods=['GET'])
+def root():
+    """Root endpoint to verify server is running"""
+    return jsonify({"status": "NoCodeEDA API is running!"})
+
 @app.route("/test", methods=['GET'])
 def test():
     """Test endpoint to verify server is running"""
