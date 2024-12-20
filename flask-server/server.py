@@ -4,6 +4,7 @@ from data_processor import DataProcessor
 import io
 import logging
 import base64
+import os
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
@@ -231,4 +232,4 @@ def save_data():
 
 if __name__ == "__main__":
     logger.info("Starting Flask server...")
-    app.run(debug=True, port=5001)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5001)))
