@@ -14,7 +14,7 @@ app = Flask(__name__)
 # Enable CORS for all routes
 CORS(app, 
      origins=["https://vyun8699.github.io", "https://vyun8699.github.io/NoCodeEDA", 
-             "https://vyun8699.github.io/NoCodeEDA/"],
+             "https://vyun8699.github.io/NoCodeEDA/", "https://nocodeeda.onrender.com"],
      methods=["GET", "POST", "OPTIONS"],
      allow_headers=["Content-Type", "Authorization"],
      supports_credentials=True)
