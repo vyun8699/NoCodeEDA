@@ -151,13 +151,13 @@ export const getVisualizationsForType = (dataType, paramCount = 1) => {
  * API endpoints for data operations
  */
 export const API_ENDPOINTS = {
-  TEST: 'http://localhost:5001/test',
-  UPLOAD: 'http://localhost:5001/upload',
-  SUMMARY: 'http://localhost:5001/summary',
-  TRANSFORM: 'http://localhost:5001/transform',
-  SAVE: 'http://localhost:5001/save',
-  VISUALIZE: 'http://localhost:5001/visualize',
-  HEAD: 'http://localhost:5001/head'
+  TEST: 'https://nocodeeda.onrender.com/test',
+  UPLOAD: 'https://nocodeeda.onrender.com/upload',
+  SUMMARY: 'https://nocodeeda.onrender.com/summary',
+  TRANSFORM: 'https://nocodeeda.onrender.com/transform',
+  SAVE: 'https://nocodeeda.onrender.com/save',
+  VISUALIZE: 'https://nocodeeda.onrender.com/visualize',
+  HEAD: 'https://nocodeeda.onrender.com/head'
 };
 
 /**
