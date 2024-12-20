@@ -171,6 +171,7 @@ export const fetchAPI = async (endpoint, options = {}) => {
       headers: {
         'Content-Type': 'application/json',
       },
+      mode: 'cors',
       ...options,
     });
     

@@ -10,13 +10,14 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-CORS(app, resources={
-    r"/*": {
-        "origins": ["http://localhost:3000", "http://localhost:3001", "http://localhost:5001", "https://vyun8699.github.io", "https://vyun8699.github.io/NoCodeEDA", "https://vyun8699.github.io/NoCodeEDA/"],
-        "methods": ["GET", "POST"],
-        "allow_headers": ["Content-Type"]
-    }
-})
+# Enable CORS for all routes
+CORS(app, 
+     origins=["http://localhost:3000", "http://localhost:3001", "http://localhost:5001", 
+             "https://vyun8699.github.io", "https://vyun8699.github.io/NoCodeEDA", 
+             "https://vyun8699.github.io/NoCodeEDA/"],
+     methods=["GET", "POST", "OPTIONS"],
+     allow_headers=["Content-Type", "Authorization"],
+     supports_credentials=True)
 
 # Initialize data processor
 processor = DataProcessor()
