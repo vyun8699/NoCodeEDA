@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app, resources={
     r"/*": {
-        "origins": ["http://localhost:3000", "http://localhost:3001", "http://localhost:5001"],
+        "origins": ["http://localhost:3000", "http://localhost:3001", "http://localhost:5001","https://vyun8699.github.io"],
         "methods": ["GET", "POST"],
         "allow_headers": ["Content-Type"]
     }
