@@ -27,7 +27,7 @@ const UploadPage = ({ onUploadSuccess }) => {
         }
       } catch (err) {
         setServerStatus('error');
-        setError('Cannot connect to server. Please make sure the Flask server is running on port 5001.');
+        setError('Cannot connect to server. Please try again later or contact support if the issue persists.');
       }
     };
 
@@ -41,7 +41,7 @@ const UploadPage = ({ onUploadSuccess }) => {
 
   const handleUpload = async () => {
     if (serverStatus !== 'connected') {
-      setError('Server is not connected. Please make sure the Flask server is running.');
+      setError('Server is not connected. Please try again later or contact support if the issue persists.');
       return;
     }
 
